@@ -23,7 +23,7 @@ class SinglyLinkedList(object):
         while n:
             data.append(n.data)
             n = n.next_node
-        return ', '.join(data)
+        return ', '.join(map(str, data))
 
     @staticmethod
     def insert_after(node, new_node):
@@ -51,7 +51,7 @@ class SinglyLinkedList(object):
             Sets the 'next_node' of the node to be the 'next_node' of the next
             node, assuming the next node is not None.
         """
-        if node.next_node != None:
+        if node.next_node:
             node.next_node = node.next_node.next_node
 
     def remove_beginning(self):
@@ -77,3 +77,22 @@ class SinglyLinkedList(object):
             n = n.next_node
 
         self.insert_after(n, new_node)
+
+    def delete(self, node):
+        """ Delete a node, ignore missing node.
+
+            TODO: clarify behaviour around missing nodes.
+        """
+        n = self.first_node
+
+        if n is None:
+            return
+
+        while n.next_node is not node:
+            n = n.next_node
+
+            # Handle reaching end without finding node
+            if n is None:
+                return
+
+        self.remove_after(n)

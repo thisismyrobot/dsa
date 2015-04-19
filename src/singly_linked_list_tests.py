@@ -71,6 +71,27 @@ class TestSinglyLinkedLists(unittest.TestCase):
         sll.append(Node('third'))
         self.assertEquals(str(sll), 'first, second, third')
 
+    def test_delete(self):
+        """ Test a delete method.
+        """
+        sll = SinglyLinkedList()
+        node1, node2, node3 = Node(1), Node(2), Node(3)
+
+        sll.append(node1)
+        sll.append(node2)
+        sll.append(node3)
+
+        self.assertEquals(str(sll), '1, 2, 3')
+
+        sll.delete(node2)
+
+        self.assertEquals(str(sll), '1, 3')
+
+        # It silently handles missing items
+        sll.delete(Node(4))
+
+        self.assertEquals(str(sll), '1, 3')
+
     def test_print(self):
         """ Test the list printing.
         """

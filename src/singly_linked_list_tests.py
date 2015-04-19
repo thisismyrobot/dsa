@@ -20,6 +20,27 @@ class TestSinglyLinkedLists(unittest.TestCase):
 
         self.assertEquals(sll.first_node.data, 'hello')
 
+    def test_removals(self):
+        """ Test list removals.
+        """
+        node1 = Node('first')
+        sll = SinglyLinkedList(node1)
+
+        node2 = Node('second')
+        sll.insert_after(node1, node2)
+
+        self.assertEquals(str(sll), 'first, second')
+
+        sll.remove_after(node1)
+
+        self.assertEquals(str(sll), 'first')
+
+        sll.insert_after(node1, node2)
+
+        sll.remove_beginning()
+
+        self.assertEquals(str(sll), 'second')
+
     def test_inserts(self):
         """ Test list inserts.
         """

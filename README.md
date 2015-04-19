@@ -10,3 +10,7 @@ and develop my DSA knowledge and skills.
 
 There's [no licensing here](UNLICENCE), this is free code that should work,
 and maybe someone else out there will find some of this useful too.
+
+## Tests
+
+Requires py.test. Run py.test from repository root.

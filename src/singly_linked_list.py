@@ -73,9 +73,7 @@ class SinglyLinkedList(object):
             self.insert_beginning(new_node)
             return
 
-        while True:
-            if n.next_node is None:
-                break
+        while n.next_node:
             n = n.next_node
 
-        n.next_node = new_node
+        self.insert_after(n, new_node)

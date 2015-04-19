@@ -13,10 +13,9 @@ also find useful.
 
 ## Time complexities
 
-Aiming to look at [these four time complexities](http://bigocheatsheet.com/)
+Aiming to look at [these three time complexities](http://bigocheatsheet.com/)
 initially:
 
-* Access
 * Search
 * Insertion
 * Deletion

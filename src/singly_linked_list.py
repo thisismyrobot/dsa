@@ -60,3 +60,22 @@ class SinglyLinkedList(object):
             Sets the first_node node to be the value of the first_node's next.
         """
         self.first_node = self.first_node.next_node
+
+    def append(self, new_node):
+        """ Append a node to the end of the linked list.
+
+            Traverse to the end, replace the last node's 'next_node' with the
+            passed in node.
+        """
+        n = self.first_node
+
+        if n is None:
+            self.insert_beginning(new_node)
+            return
+
+        while True:
+            if n.next_node is None:
+                break
+            n = n.next_node
+
+        n.next_node = new_node

@@ -62,6 +62,15 @@ class TestSinglyLinkedLists(unittest.TestCase):
 
         self.assertEquals(str(sll), 'before the first, first, second')
 
+    def test_append(self):
+        """ Test an append method.
+        """
+        sll = SinglyLinkedList()
+        sll.append(Node('first'))
+        sll.append(Node('second'))
+        sll.append(Node('third'))
+        self.assertEquals(str(sll), 'first, second, third')
+
     def test_print(self):
         """ Test the list printing.
         """

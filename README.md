@@ -14,3 +14,5 @@ and maybe someone else out there will find some of this useful too.
 ## Tests
 
 Requires py.test. Run py.test from repository root.
+
+The tests should result in a close fit to [this](http://bigocheatsheet.com/).

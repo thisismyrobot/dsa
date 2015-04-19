@@ -16,10 +16,10 @@ also find useful.
 Aiming to look at [these four time complexities](http://bigocheatsheet.com/)
 initially:
 
-    * Access
-    * Search
-    * Insertion
-    * Deletion
+* Access
+* Search
+* Insertion
+* Deletion
 
 ## Tests
 

@@ -96,3 +96,14 @@ class SinglyLinkedList(object):
                 return
 
         self.remove_after(n)
+
+    def exists(self, node):
+        """ Checks for the existance of a node.
+        """
+        n = self.first_node
+        while n is not node:
+            n = n.next_node
+            # Identify end of list
+            if n is None:
+                return False
+        return True

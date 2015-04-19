@@ -92,6 +92,25 @@ class TestSinglyLinkedLists(unittest.TestCase):
 
         self.assertEquals(str(sll), '1, 3')
 
+    def test_exists(self):
+        """ Tests for membership.
+        """
+        sll = SinglyLinkedList()
+        node1, node2, node3 = Node(1), Node(2), Node(3)
+
+        sll.append(node1)
+        sll.append(node2)
+        sll.append(node3)
+
+        self.assertTrue(sll.exists(node1))
+        self.assertTrue(sll.exists(node2))
+        self.assertTrue(sll.exists(node3))
+
+        self.assertFalse(sll.exists(Node(4)))
+
+        # Membership is based on object identity, not value
+        self.assertFalse(sll.exists(Node(1)))
+
     def test_print(self):
         """ Test the list printing.
         """

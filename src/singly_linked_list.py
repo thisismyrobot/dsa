@@ -25,6 +25,15 @@ class SinglyLinkedList(object):
             n = n.next_node
         return ', '.join(map(str, data))
 
+    def populate(self, nodes):
+        """ Populate with nodes.
+        """
+        for (i, node) in enumerate(nodes):
+            if i == 0:
+                self.insert_beginning(node)
+            else:
+                self.insert_after(nodes[i-1], node)
+
     @staticmethod
     def insert_after(node, new_node):
         """ Insert a node after a given node.

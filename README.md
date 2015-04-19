@@ -26,7 +26,8 @@ Requires py.test. Run py.test from repository root.
 
 ## Requires
 
-I'm using py.test for testing and mathplotlib for the graphs.
+I'm using py.test for testing and matplotlib (and its dependencies) for the
+graphs.
 
 ## Graphs
 

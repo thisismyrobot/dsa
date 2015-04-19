@@ -8,5 +8,5 @@ This repo will hold a examples that I'm going to work through, including a
 number of tests to "prove" best- and worst-case complexities etc. as I refresh
 and develop my DSA knowledge and skills.
 
-There's no licensing here, this is free code that should work, and maybe
+There's [no licensing here](LICENCE), this is free code that should work, and maybe
 someone else out there will find some of this useful too.

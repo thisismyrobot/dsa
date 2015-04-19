@@ -8,11 +8,19 @@ This repo will hold worked examples of DSAs and tests to "prove" best- and
 worst-case complexities etc. as I refresh and develop my DSA knowledge and
 skills.
 
-There's [no licensing here](UNLICENCE), this is free code that should work,
-and maybe someone else out there will find some of this useful too.
+There's [no licensing here](UNLICENCE), just freely-usable code that you might
+also find useful.
+
+## Time complexities
+
+Aiming to look at [these four time complexities](http://bigocheatsheet.com/)
+initially:
+
+    * Access
+    * Search
+    * Insertion
+    * Deletion
 
 ## Tests
 
 Requires py.test. Run py.test from repository root.
-
-The tests should result in a close fit to [this](http://bigocheatsheet.com/).

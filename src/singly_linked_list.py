@@ -1,5 +1,6 @@
-""" A singly-linked-list implementation in Python.
+""" A singly-linked-list implementation.
 """
+
 
 class Node(object):
     """ The proverbial Node.
